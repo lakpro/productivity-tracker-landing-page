@@ -1,49 +1,57 @@
-import React, { useState } from 'react';
-import "./assets/css/Navbar.css"
-import logo from "./assets/logo/logo.jpg"
-
+import React, { useState } from "react";
+import "./assets/css/Navbar.css";
+import logo from "./assets/logo/logo.jpg";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState("");
 
   const toggleMenu = () => {
-    if(isOpen==="open"){
-        setIsOpen("");
-    }
-    else{
-        setIsOpen("open");
+    if (isOpen === "open") {
+      setIsOpen("");
+    } else {
+      setIsOpen("open");
     }
   };
 
-
   return (
-    <header className='header'>
+    <header className="header">
       <nav>
         <div className="logo">
           <img src={logo} alt="Logo" />
         </div>
         <ul className={isOpen}>
           <li>
-            <a href='#1'>Home</a>
+            <HashLink to="/#1">
+              <a href="#1">Home</a>
+            </HashLink>
           </li>
           <li>
-            <a href="#2" >About</a>
+            <HashLink to="/#2">
+              <a href="#2">About</a>
+            </HashLink>
           </li>
           <li>
-            <a href="#3" >Features</a>
+            <HashLink to="/#3">
+              <a href="#3">Features</a>
+            </HashLink>
           </li>
           <li>
-            <a href="#5" >FAQ</a>
+            <HashLink to="/#5">
+              <a href="#5">FAQ</a>
+            </HashLink>
           </li>
           <li>
-            <a href="#6" >Contact</a>
+            <HashLink to="/#6">
+              <a href="#6">Contact</a>
+            </HashLink>
           </li>
           <li>
-            <div className='checkbox'  onClick={props.lightmode}> 
-            <input type="checkbox" />
-            <span>LIGHT MODE</span>
+            <div className="checkbox" onClick={props.lightmode}>
+              <input type="checkbox" />
+              <span>LIGHT MODE</span>
             </div>
-           
           </li>
         </ul>
 
