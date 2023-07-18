@@ -23,12 +23,17 @@ function App() {
     border: "1 px",
   });
   const handleonclick = () => {
+    const bodyy=document.querySelector(".change");
+
     if (mode === false) {
       setMode(true);
       setEnable("light mode");
+      
+      bodyy.style.backgroundImage="url('https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128_1280.jpg')"
     } else {
       setEnable("Dark mode");
       setMode(false);
+    bodyy.style.backgroundImage="url('//i.pinimg.com/originals/82/a0/47/82a0474442bb6189afd19ba620222507.jpg')"
     }
     console.log(mode);
     if (MyStyle.color === "white") {
@@ -63,7 +68,7 @@ function App() {
 
         <FeatureSection mode={mode}></FeatureSection>
         <Reviewcard mode={mode}></Reviewcard>
-        <FAQs mode={mode} />
+        <FAQs  />
         <Contact mode={mode}></Contact>
       </>
     );

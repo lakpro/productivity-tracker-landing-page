@@ -1,8 +1,8 @@
 .about_container{
     height: 120vh;
     width: 100%;
-   background-image: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128_1280.jpg");
-   background-size: cover;
+
+
    transition: all 100ms linear;
 }
 
@@ -10,7 +10,7 @@
   position: relative;
   top:60px;
     width: 100%;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: white;
     font-family: gilory;
    height: auto;
@@ -23,10 +23,15 @@
 
 
 .about_head{
-    -webkit-text-stroke: 1.3px hsl(66.88deg 62.06% 50.39%);
+    -webkit-text-stroke: 1.3px hsl(66.88deg 62.06% 50.39%);    top: 0px;
+    width: 90%;
+    
+    margin: 5px;
+    opacity: 1;
+    padding: 10px;
 }
 .l{
-  background-image:url("https://i.pinimg.com/originals/82/a0/47/82a0474442bb6189afd19ba620222507.jpg");
+
   background-size: cover;
 }
 .light{
@@ -34,6 +39,12 @@
 
 
 
+}
+.about_content{
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
 }
 /*=============== GOOGLE FONTS ===============*/
 
@@ -76,7 +87,7 @@ img {
     justify-content: center;
 }
   .card__article {
-    width: 90%;
+    width: 100%;
     position: relative;
     background-color: var(--container-color);
     padding: 2rem;
@@ -93,12 +104,12 @@ img {
   .card__title {
   color: var(--container-color);
   -webkit-text-stroke: 1px hsl(217, 75%, 80%);
-    font-size: 24px;
+    font-size: 26px;
     line-height: 100%;
     margin-bottom: 1rem;
   }
   .card__description {
-    font-size:16px;
+    font-size:18px;
     color: white;
   }
   .card__data {
@@ -232,15 +243,15 @@ img {
     }
     .card__container{
       margin-bottom: 2rem;
+      padding: 30px;
     }
     .about_head{
       font-size: 1.5rem;
       top:40px;
+      
     }
     .card__img {
       width: 100px;
   }
-  .card__article{
-    margin-left: 20px;
-  }
+
 }

@@ -1,6 +1,6 @@
 .review {
     position: relative;
-    background-image: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128_1280.jpg");
+
     background-size: cover;
     transition: all 100ms linear;
     font-family: gilory;
@@ -18,8 +18,8 @@
 
   }
   .lightsssss{
-    background-image:url("https://i.pinimg.com/originals/82/a0/47/82a0474442bb6189afd19ba620222507.jpg");
-    background-size: contain;
+ 
+    background-size: cover;
   }
 
   .review h2 {
@@ -116,6 +116,7 @@
     .nxtBtn {
       right: 1rem;
     }
+  
   }
     
   @media (min-width: 1081px) {

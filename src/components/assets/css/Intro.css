@@ -1,22 +1,28 @@
+
 .pt{
   top: 0;
-  height: 100vh;
+  height: 90vh;
     z-index: -1;
     display: flex;
     justify-content: center;
-    background-image: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128_1280.jpg");
-    background-size: cover;
-    transition: all 100ms linear;
+
+ 
+
   }
 .lights{
-  background-image:url("https://i.pinimg.com/originals/82/a0/47/82a0474442bb6189afd19ba620222507.jpg");
-  background-size: cover;
+
   
 }
 .lights .pt_intro p{
   color: black;
 }
+body{
+  background-image: url("https://cdn.pixabay.com/photo/2016/12/29/18/44/background-1939128_1280.jpg");
+  
+  background-repeat: repeat;
 
+  transition: all 100ms linear;
+}
 .pt_intro{
   
     position: relative;

@@ -13,6 +13,7 @@ const Header = (props) => {
     } else {
       setIsOpen("open");
     }
+    
   };
 
   return (
