@@ -72,13 +72,15 @@ function App() {
     <>
       <Navbar mode={mode} lightmode={handleonclick} enable={enable}></Navbar>
       {/* <Router> */}
-      <Routes>
-        <Route exact path="/" element={<Main />} />
-        {/* <Route path="/privacy#3" element={<Main />} /> } */}
-        {/* // when encounter /privacy#3 go to home page */}
-        <Route path="#3" element={<Main />} />
-        <Route exact path="/privacy" element={<Privacy mode={mode} />} />
-      </Routes>
+      <div className="App">
+        <Routes>
+          <Route exact path="/" element={<Main />} />
+          {/* <Route path="/privacy#3" element={<Main />} /> } */}
+          {/* // when encounter /privacy#3 go to home page */}
+          <Route path="#3" element={<Main />} />
+          <Route exact path="/privacy" element={<Privacy mode={mode} />} />
+        </Routes>
+      </div>
       {/* </Router> */}
       {/* <Main /> */}
     </>
