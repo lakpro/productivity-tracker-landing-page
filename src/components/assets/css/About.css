@@ -24,7 +24,7 @@
 
 .about_head{
     -webkit-text-stroke: 1.3px hsl(66.88deg 62.06% 50.39%);    top: 0px;
-    width: 90%;
+
     
     margin: 5px;
     opacity: 1;
@@ -213,6 +213,7 @@ img {
     .card__title {
       font-size: 2rem;
     }
+ 
   }
   /* For medium devices */
   @media screen and (min-width: 440px) {
@@ -225,6 +226,7 @@ img {
       grid-template-columns: repeat(2, 328px);
       column-gap: 2rem;
     }
+ 
   }
   /* For large devices */
   @media screen and (min-width: 1024px) {
@@ -236,6 +238,7 @@ img {
       column-gap: 2rem;
     }
   }
+
   @media screen and (max-width: 1020px){
     .about_container{
       height: auto;
@@ -246,7 +249,7 @@ img {
       padding: 30px;
     }
     .about_head{
-      font-size: 1.5rem;
+      font-size: 2.3rem;
       top:40px;
       
     }
@@ -254,4 +257,11 @@ img {
       width: 100px;
   }
 
+}
+@media screen and (max-width: 800px){
+  .about_head{
+    font-size: 1.9rem;
+    
+    
+  } 
 }

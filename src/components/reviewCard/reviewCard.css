@@ -1,7 +1,7 @@
 .review {
     position: relative;
-
-    background-size: cover;
+    padding: 20px;
+    margin: 20px;
     transition: all 100ms linear;
     font-family: gilory;
   }
@@ -94,11 +94,11 @@
   }
   
   .prvBtn {
-    left: 2rem;
+    left: 4rem;
   }
   
   .nxtBtn {
-    right: 2rem;
+    right: 4rem;
   }
   
   @media (max-width: 420px) {
