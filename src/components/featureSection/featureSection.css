@@ -155,7 +155,7 @@
     .screenshot_description{
       width: 90%;
       top: 0px;
-      margin-top: 30px;
+      margin-top: 20px;
      
     }
     .featureSection_features_videos iframe{
@@ -173,6 +173,7 @@
         height: 27rem;
         width: 18rem;
         float: none;
+        margin: 20px;
     }
         .screenshot_description {
           padding-top: 20px;
