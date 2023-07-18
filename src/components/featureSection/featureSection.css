@@ -72,7 +72,7 @@
     top: 5rem;
     border-radius: 2rem;
     margin:0 2rem;
-
+    
     box-shadow: white 0px 6px 11px;
     transition: all 600ms ease-in-out;
   }
@@ -86,7 +86,7 @@
 
   .screenshot_description {
     position: relative;
-    
+    display: flex;
     top:-5rem;
     text-align: center;
     font-size: 18px;
@@ -94,16 +94,9 @@
     height: auto;
     opacity: 0;
     transition: all 600ms ease-in-out;
-    
+    align-items: center;
   }
-  .j img{
-    position: relative;
-    right: -55vw;
-  }
-  .j .screenshot_description{
-    position: relative;
-    left: -29vw;
-  }
+
   .lig img{
     box-shadow: black 0px 6px 11px;
   }
