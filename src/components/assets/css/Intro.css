@@ -2,17 +2,13 @@
 .pt{
   top: 0;
   height: 90vh;
-    z-index: -1;
+
     display: flex;
     justify-content: center;
-
+ 
  
 
   }
-.lights{
-
-  
-}
 .lights .pt_intro p{
   color: black;
 }
@@ -40,12 +36,16 @@ body{
 }
 .pt_intro h1{
     color:hsl(66.88deg 62.06% 50.39%);
-    font-size: 3.7rem;
+    font-size: 3.9rem;
     align-content: center;
+    margin: 6px;
 }
 .pt_intro p{
     width: 80%;
     color: white;
+    margin: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 @media screen and (max-width: 850px) {
   .pt_intro{

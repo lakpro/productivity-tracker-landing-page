@@ -10,7 +10,7 @@
   position: relative;
   top:60px;
     width: 100%;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     color: white;
     font-family: gilory;
    height: auto;
@@ -26,7 +26,7 @@
     -webkit-text-stroke: 1.3px hsl(66.88deg 62.06% 50.39%);    top: 0px;
 
     
-    margin: 5px;
+
     opacity: 1;
     padding: 10px;
 }
@@ -87,7 +87,7 @@ img {
     justify-content: center;
 }
   .card__article {
-    width: 100%;
+    width: 90%;
     position: relative;
     background-color: var(--container-color);
     padding: 2rem;
@@ -104,12 +104,12 @@ img {
   .card__title {
   color: var(--container-color);
   -webkit-text-stroke: 1px hsl(217, 75%, 80%);
-    font-size: 26px;
+    font-size: 24px;
     line-height: 100%;
     margin-bottom: 1rem;
   }
   .card__description {
-    font-size:18px;
+    font-size:17px;
     color: white;
   }
   .card__data {
@@ -258,9 +258,9 @@ img {
   }
 
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 830px){
   .about_head{
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     
     
   } 

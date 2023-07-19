@@ -1,5 +1,5 @@
 .contact_container {
-  width: 100vw;
+  
   height: 15rem;
   background-color: #121212;
   background-size: cover;
@@ -97,6 +97,7 @@
   justify-content: center;
 }
 .pa {
+  height: auto;
   text-align: center;
   color: rgb(0, 0, 0);
   margin-bottom: 5px;

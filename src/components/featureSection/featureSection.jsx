@@ -24,14 +24,14 @@ const FeatureSection = (props) => {
       
     });
     des.forEach((imgElement) => {
-      const despos = imgElement.offsetTop - imgElement.offsetHeight -150;
+      const despos = imgElement.offsetTop - imgElement.offsetHeight -320;
       
       if(scrollpos>despos){
-        imgElement.style.top=0+'rem';
+       
         imgElement.style.opacity=1;
       }
       else{
-        imgElement.style.top=-5+'rem';
+    
         imgElement.style.opacity=0;
       }
       

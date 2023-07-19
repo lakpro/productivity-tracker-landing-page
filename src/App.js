@@ -77,7 +77,7 @@ function App() {
     <>
       <Navbar mode={mode} lightmode={handleonclick} enable={enable}></Navbar>
       {/* <Router> */}
-      <div className="App">
+     
         <Routes>
           <Route exact path="/" element={<Main />} />
           {/* <Route path="/privacy#3" element={<Main />} /> } */}
@@ -85,7 +85,7 @@ function App() {
           <Route path="#3" element={<Main />} />
           <Route exact path="/privacy" element={<Privacy mode={mode} />} />
         </Routes>
-      </div>
+   
       {/* </Router> */}
       {/* <Main /> */}
     </>
