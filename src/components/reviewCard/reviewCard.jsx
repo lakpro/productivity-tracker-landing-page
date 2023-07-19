@@ -5,24 +5,60 @@ import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill } from 'react-ico
 import { images } from '../assets/data/reviewData';
 import { useEffect } from 'react';
 const ReviewCard = (props) => {
- 
+  let prevIndex=0;
   const [startIndex, setStartIndex] = useState(0);
-
   const handleClickPrev = () => {
-    if (startIndex > 0) {
-      setStartIndex(prevIndex => prevIndex - 1);
-    }
+    const maxIndex = images.length - (window.innerWidth < 450 ? 1 : window.innerWidth < 720 ? 2 : 3);
+    const newIndex = startIndex === 0 ? maxIndex : startIndex - 1;
+
+    setStartIndex(newIndex);
   };
 
   const handleClickNext = () => {
-    if (startIndex < images.length - (window.innerWidth < 450 ? 1 : window.innerWidth < 720 ? 2 : 3)) {
-      setStartIndex(prevIndex => prevIndex + 1);
-    }
+    const maxIndex = images.length - (window.innerWidth < 450 ? 1 : window.innerWidth < 720 ? 2 : 3);
+    const newIndex = startIndex === maxIndex ? 0 : startIndex + 1;
+
+    setStartIndex(newIndex);
   };
 
   const visibleImages = images.slice(startIndex, startIndex + (window.innerWidth < 450 ? 1 : window.innerWidth < 720 ? 2 : 3));
 
   useEffect(() => {
+    let startX = 0;
+let startY = 0;
+let endX = 0;
+let endY = 0;
+
+// Element on which you want to detect the swipe right gesture
+const swipeElement = document.querySelector('.reviewCard');
+
+// Add a touchstart event listener to the element
+const handleTouchStart = (event) => {
+  startX = event.touches[0].clientX;
+  startY = event.touches[0].clientY;
+  
+};
+
+const handleTouchEnd = (event) => {
+  endX = event.changedTouches[0].clientX;
+  endY = event.changedTouches[0].clientY;
+
+  const deltaX = endX - startX;
+
+
+  if (deltaX > 10) {
+   handleClickPrev()
+
+  }
+
+  if(deltaX < 0 ) {
+  handleClickNext();
+
+  }
+};
+
+swipeElement.addEventListener('touchstart', handleTouchStart);
+swipeElement.addEventListener('touchend', handleTouchEnd);
     const handleScroll = () => {
       const scrollPos = window.scrollY;
       const rve = document.querySelector(".review h2");
@@ -42,8 +78,11 @@ const ReviewCard = (props) => {
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      swipeElement.removeEventListener('touchstart', handleTouchStart);
+      swipeElement.removeEventListener('touchend', handleTouchEnd);
     };
-  }, []);
+  },[handleClickNext, handleClickPrev]);
+  
   return (
     <div className={`review ${props.mode ? '' : 'lightsssss'}`} id='4'>
       <h2>What our User See In this Extension</h2>
