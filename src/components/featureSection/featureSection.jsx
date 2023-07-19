@@ -27,7 +27,7 @@ const FeatureSection = (props) => {
       const despos = imgElement.offsetTop - imgElement.offsetHeight -150;
       
       if(scrollpos>despos){
-        imgElement.style.top=2+'rem';
+        imgElement.style.top=0+'rem';
         imgElement.style.opacity=1;
       }
       else{
@@ -39,6 +39,7 @@ const FeatureSection = (props) => {
   })
 }, []);
   return (
+    <>
     <div className={`featureSection ${props.mode ? '' : 'li'}`} id='3'>
       <h2>BOOST IT!!</h2>
       <div className="featureSection_features">
@@ -65,8 +66,8 @@ const FeatureSection = (props) => {
                  is sint, illum aut dicta.</p>
             </div>
           </div>
-          <div className={`featureSection_features_screenshot j ${props.mode ? '' : 'lig'}`}>
-          <img src={ptrr} alt="Screenshot 2"  />
+          <div className={`featureSection_features_screenshot o ${props.mode ? '' : 'lig'}`}>
+       
             <div className="screenshot_description">
               <p>Image 2 Description Lorem ipsum dolor sit
                  amet consectetur adipisicing elit. Rem ne
@@ -77,7 +78,7 @@ const FeatureSection = (props) => {
                  mpora vero eum expedita consequatur offici
                  is sint, illum aut dicta</p>
             </div>
-          
+            <img src={ptrr} alt="Screenshot 2"  /> 
           </div>
           <div className={`featureSection_features_screenshot ${props.mode ? '' : 'lig'}`}>
             <img src={ptr} alt="Screenshot 3" />
@@ -94,7 +95,7 @@ const FeatureSection = (props) => {
           </div>
         </div>
       </div>
-    
+      </> 
   );
 };
 

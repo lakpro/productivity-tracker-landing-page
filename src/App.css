@@ -9,19 +9,9 @@
   --normal-font-size: 1.25rem;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* font-family: var(--body-font); */
-  /* font-size: var(--normal-font-size); */
-  /* color: var(--body-color); */
-}
-
-body {
-  /* width: 60vw; */
-}
-
 .App {
-  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

@@ -15,12 +15,12 @@ const ReviewCard = (props) => {
   };
 
   const handleClickNext = () => {
-    if (startIndex < images.length - (window.innerWidth < 420 ? 1 : window.innerWidth < 720 ? 2 : 3)) {
+    if (startIndex < images.length - (window.innerWidth < 450 ? 1 : window.innerWidth < 720 ? 2 : 3)) {
       setStartIndex(prevIndex => prevIndex + 1);
     }
   };
 
-  const visibleImages = images.slice(startIndex, startIndex + (window.innerWidth < 420 ? 1 : window.innerWidth < 720 ? 2 : 3));
+  const visibleImages = images.slice(startIndex, startIndex + (window.innerWidth < 450 ? 1 : window.innerWidth < 720 ? 2 : 3));
 
   useEffect(() => {
     const handleScroll = () => {
