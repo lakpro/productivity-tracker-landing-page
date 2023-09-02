@@ -6,7 +6,7 @@
   background-color: #cbe216;
   font-family: gilory;
   height: auto;
-  color: white;
+  color: rgb(0, 0, 0);
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -21,6 +21,7 @@
   font-size: 3rem;
 }
 .li {
+  background-color: #232323;
   color: black;
 }
 
@@ -30,10 +31,10 @@
 }
 .li {
   
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .li h2 {
-  color: black;
+  color: hsl(70, 83%, 45%);;
 }
 .featureSection_features {
   display: flex;

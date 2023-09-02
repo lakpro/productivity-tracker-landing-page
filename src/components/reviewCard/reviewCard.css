@@ -19,7 +19,7 @@
 
   }
   .lightsssss{
- 
+    background-color: rgb(51 51 51);
     background-size: cover;
   }
 
@@ -36,7 +36,7 @@
     transition: all 600ms ease-in-out;
   }
   .lightsssss h2{
-    color: black;
+    color: hsl(70, 83%, 45%);;
   }
 
   

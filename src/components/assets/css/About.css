@@ -36,11 +36,11 @@
     padding: 10px;
 }
 .l{
-
+  background-color: rgb(54 54 54);
   background-size: cover;
 }
 .light{
-  color: black;
+  color: hsl(70, 83%, 45%);
 
 
 
