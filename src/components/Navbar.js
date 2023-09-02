@@ -51,7 +51,7 @@ const Header = (props) => {
           <li>
             <div className="checkbox" onClick={props.lightmode}>
               <input type="checkbox" />
-              <span>LIGHT MODE</span>
+              <span>DARK MODE</span>
             </div>
           </li>
         </ul>
