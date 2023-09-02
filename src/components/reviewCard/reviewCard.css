@@ -1,7 +1,8 @@
 .review {
     position: relative;
     padding: 20px;
-    margin: 20px;
+    
+    background-color: rgb(245, 255, 168);
     transition: all 100ms linear;
     font-family: gilory;
   }

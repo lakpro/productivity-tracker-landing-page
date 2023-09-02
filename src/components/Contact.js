@@ -10,15 +10,15 @@ function Contact(props) {
     <>
       <div className="contact" id="6">
         {/* contact me card */}
-        <div className={`contact_container ${props.mode ? "" : "lightsss"}`}>
+        <div className={`contact_container ${props.mode ? "" : ""}`}>
           <h1>Get in Touch</h1>
           <p>
             Want to get in touch?We'd to hear from you.Here's How you can reach
             us...
           </p>
         </div>
-        <div className={`box_container ${props.mode ? "" : "lightssss"}`}>
-          <div className={`box ${props.mode ? "" : "lightss"}`}>
+        <div className={`box_container ${props.mode ? "" : ""}`}>
+          <div className={`box ${props.mode ? "" : ""}`}>
             <div className="contact_me">
               <i class="fa-solid fa-address-book"></i>
               <span>Contact me</span>
@@ -39,7 +39,7 @@ function Contact(props) {
             </div>
           </div>
           {/* access extention card  */}
-          <div className={`box ${props.mode ? "" : "lightss"}`}>
+          <div className={`box ${props.mode ? "" : ""}`}>
             <h1 className="access"> Access the Extenstion</h1>
             <p className="pa">boost the productivity</p>
             <div className="button">
@@ -56,7 +56,7 @@ function Contact(props) {
             </div>
           </div>
         </div>
-        <div className={`copy ${props.mode ? "" : "y"}`}>
+        <div className={`copy ${props.mode ? "" : ""}`}>
           <li>
             <Link to="/privacy">Privacy Policy</Link>
           </li>
